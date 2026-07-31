@@ -1,0 +1,242 @@
+/* ================= HERO ================= */
+
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Video */
+
+.hero-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark Overlay */
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(10,18,35,0.65);
+}
+
+/* Hero Content */
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 850px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding-top: 80px;
+}
+
+/* Established */
+
+.hero-est{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Company Name */
+
+.hero h1{
+    font-family: "Outfit", sans-serif;
+    font-size: 5.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: .95;
+    margin-bottom: 22px;
+}
+
+/* Motto */
+
+.hero h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: italic;
+    color:#F7C400;
+    margin-bottom:35px;
+}
+/* Description */
+
+.hero-description{
+    font-family:"Manrope",sans-serif;
+    font-size:1.15rem;
+    font-weight:400;
+    line-height:1.8;
+    max-width:700px;
+    color:#ECECEC;
+}
+
+/* Buttons */
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.primary-btn,
+.secondary-btn{
+
+    padding: 16px 36px;
+
+    border-radius: 50px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: .35s;
+}
+
+.primary-btn{
+
+    background: #1D4ED8;
+
+    color: white;
+
+    border: none;
+}
+
+.primary-btn:hover{
+
+    background: #163ea8;
+
+    transform: translateY(-4px);
+}
+
+.secondary-btn{
+
+    background: transparent;
+
+    color: white;
+
+    border: 2px solid white;
+}
+
+.secondary-btn:hover{
+
+    background: white;
+
+    color: #1D2D8C;
+}
+
+/* Scroll */
+
+.scroll{
+    margin-top: 45px;
+
+    font-size: 18px;
+
+    animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(10px);
+    }
+
+}
+.social-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin:35px 0;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    font-family:"Outfit",sans-serif;
+    font-weight:500;
+    letter-spacing:1px;
+}
+
+.social-links a:hover{
+    color:#F7C400;
+    transform:translateY(-2px);
+}
+
+.social-links span{
+    color:#888;
+    font-size:18px;
+}
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.hero-content{
+
+    padding-top:100px;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.hero h2{
+    font-size:2.4rem;
+    font-weight:600;
+    color:#F7C400;
+}
+
+.hero-description{
+    font-size:1.15rem;
+    line-height:1.9;
+    color:#ECECEC;
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:250px;
+}
+
+.hero-est{
+    font-family:"Outfit",sans-serif;
+    font-size:15px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    color:#F7C400;
+    font-weight:600;
+}
+}

@@ -1,0 +1,468 @@
+/* ======================================
+   STYLISH FOOTER
+====================================== */
+
+.footer {
+
+    position: relative;
+
+    width: 100%;
+
+    background: #050505;
+
+    color: white;
+
+    overflow: hidden;
+
+}
+
+
+/* ======================================
+   BACKGROUND WATERMARK
+====================================== */
+
+.footer-watermark {
+
+    position: absolute;
+
+    right: -30px;
+
+    bottom: -100px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28rem;
+
+    font-weight: 700;
+
+    line-height: .7;
+
+    color: rgba(128, 0, 32, .055);
+
+    pointer-events: none;
+
+    user-select: none;
+
+}
+
+
+/* ======================================
+   MAIN CONTAINER
+====================================== */
+
+.footer-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1300px, 90%);
+
+    margin: auto;
+
+    padding: 100px 0 70px;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1.3fr 1fr;
+
+    gap: 70px;
+
+}
+
+
+/* ======================================
+   BRAND
+====================================== */
+
+.footer-logo {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 55px;
+
+    height: 55px;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    border-radius: 50%;
+
+    font-family: "Outfit", sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: white;
+
+    transition: .4s ease;
+
+}
+
+.footer-logo:hover {
+
+    border-color: #800020;
+
+    color: #800020;
+
+}
+
+
+.footer-brand h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2.7rem;
+
+    margin: 25px 0 12px;
+
+    font-weight: 600;
+
+}
+
+
+.footer-tagline {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,.5);
+
+}
+
+
+/* ======================================
+   FOOTER COLUMNS
+====================================== */
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.footer-column h3 {
+
+    font-family: "Outfit", sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: rgba(255,255,255,.4);
+
+    margin: 5px 0 25px;
+
+}
+
+
+/* ======================================
+   LINKS
+====================================== */
+
+.footer-column a {
+
+    position: relative;
+
+    width: fit-content;
+
+    margin-bottom: 15px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    color: rgba(255,255,255,.72);
+
+    text-decoration: none;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+
+}
+
+
+/* SUBTLE HOVER */
+
+.footer-column a:hover {
+
+    color: #800020;
+
+    transform: translateX(3px);
+
+}
+
+
+/* Small wine line */
+
+.footer-column a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -4px;
+
+    width: 0;
+
+    height: 1px;
+
+    background: #800020;
+
+    transition: width .3s ease;
+
+}
+
+
+.footer-column a:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* ======================================
+   CONTACT TEXT
+====================================== */
+
+.footer-column p {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: rgba(255,255,255,.55);
+
+    margin: 5px 0 0;
+
+}
+
+
+/* ======================================
+   CTA
+====================================== */
+
+.footer-cta {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1300px, 90%);
+
+    margin: auto;
+
+    padding: 40px 0;
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+.footer-cta p {
+
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 16px;
+
+    color: rgba(255,255,255,.55);
+
+}
+
+
+/* ======================================
+   LET'S TALK BUTTON
+====================================== */
+
+.footer-cta a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 14px 24px;
+
+    border: 1px solid rgba(128,0,32,.7);
+
+    border-radius: 50px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: "Outfit", sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    transition:
+        background .35s ease,
+        border-color .35s ease,
+        transform .35s ease;
+
+}
+
+
+.footer-cta a span {
+
+    font-size: 18px;
+
+    transition: transform .35s ease;
+
+}
+
+
+/* SUBTLE CTA HOVER */
+
+.footer-cta a:hover {
+
+    background: #800020;
+
+    border-color: #800020;
+
+    transform: translateY(-2px);
+
+}
+
+
+.footer-cta a:hover span {
+
+    transform: translateX(4px);
+
+}
+
+
+/* ======================================
+   BOTTOM
+====================================== */
+
+.footer-bottom {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1300px, 90%);
+
+    margin: auto;
+
+    padding: 25px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+
+    color: rgba(255,255,255,.35);
+
+}
+
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media(max-width: 992px) {
+
+    .footer-container {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 50px;
+
+    }
+
+}
+
+
+@media(max-width: 768px) {
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        padding: 70px 0 50px;
+
+        gap: 45px;
+
+    }
+
+    .footer-brand h2 {
+
+        font-size: 2.3rem;
+
+    }
+
+    .footer-cta {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .footer-watermark {
+
+        font-size: 16rem;
+
+        right: -20px;
+
+        bottom: -40px;
+
+    }
+
+}

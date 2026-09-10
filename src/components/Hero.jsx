@@ -27,11 +27,11 @@ function Hero() {
              target="_blank">Tomi</a>
             <span>•</span>
 
-            <a href="https://instagram.com/imperialcrown"
+            <a href="https://instagram.com/imperialcrownjuice"
             target="_blank">Imperial Crown</a>
             <span>•</span>
 
-            <a href="https://instagram.com/blackstallion"
+            <a href="https://instagram.com/blackstalliondrink"
              target="_blank">Black Stallion</a>
          </div>
 

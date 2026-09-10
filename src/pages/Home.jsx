@@ -4,6 +4,8 @@ import About from "..//components/About";
 import Clients from "../components/Clients";
 import Products from "../components/Products";
 import Contact from "../components/Contact";
+import Location from "../components/Location";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       <Clients/>
       <Products/>
       <Contact/>
+      <Location/>
+      <Footer/>
     </>
   );
 }

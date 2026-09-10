@@ -11,10 +11,10 @@ import crown from "../assets/images/crown.png";
 import stallion from "../assets/images/stallion.png";
 
 const tomiFlavours = [
-  { name: "Apple", emoji: "🍎", image: tomiApple },
-  { name: "Orange", emoji: "🍊", image: tomiOrange },
-  { name: "Mango", emoji: "🥭", image: tomiMango },
-  { name: "Cranberry", emoji: "❤️", image: tomiCranberry },
+  { name: "Apple",  image: tomiApple },
+  { name: "Orange", image: tomiOrange },
+  { name: "Mango", image: tomiMango },
+  { name: "Cranberry", image: tomiCranberry },
 ];
 
 const products = [
